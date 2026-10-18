@@ -1,176 +1,110 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hi sormili Roy </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার সোনামণি ❤️</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            color: #c2185b;
+        }
 
-body{
-    font-family:Arial, sans-serif;
-    background:linear-gradient(-45deg,#ff9a9e,#fad0c4,#a18cd1,#fbc2eb);
-    background-size:400% 400%;
-    animation:bgAnimation 10s ease infinite;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-}
+        .message-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 2;
+        }
 
-@keyframes bgAnimation{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
+        button {
+            background: #ff4081;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    background:rgba(0,0,0,0.5);
-    padding:20px;
-    border-radius:15px;
-    animation:fadeIn 2s;
-}
-
-@keyframes fadeIn{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-h1{
-    color:#ffeb3b;
-    margin-bottom:15px;
-}
-
-.quote{
-    font-size:20px;
-    margin:20px 0;
-    font-style:italic;
-}
-
-img{
-    width:100%;
-    max-width:600px;
-    border-radius:15px;
-    margin:15px auto;
-    display:block;
-    transition:0.5s;
-}
-
-img:hover{
-    transform:scale(1.05);
-}
-
-a{
-    color:#00ffff;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-a:hover{
-    color:#ffeb3b;
-}
-
-button{
-    margin-top:20px;
-    padding:12px 25px;
-    border:none;
-    border-radius:30px;
-    background:#ff4081;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#e91e63;
-}
-
-#clock{
-    font-size:24px;
-    margin:15px 0;
-    color:#00ff99;
-}
-
-iframe{
-    width:100%;
-    max-width:700px;
-    height:400px;
-    margin-top:20px;
-    border-radius:15px;
-}
-</style>
+        #message {
+            display: none;
+            white-space: pre-line;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="message-box">
 
-<h1>🌸😘😘😘 সোনামনি 🌸</h1>
+        <h2>❤️🌸 আমার সোনামণি 🌸❤️</h2>
 
-<div id="clock"></div>
+        <button onclick="showMessage()">
+            তোমার জন্য একটি মেসেজ 🥰
+        </button>
 
-<p class="quote">
-"My cute Sonamoni😘😘😘, your smile makes even ordinary days feel special."
-</p>
+        <p id="message"></p>
 
-<p>
-Having a friend like you is truly a little piece of happiness in life.
-</p>
+        <p>🕒 বর্তমান সময়: <span id="clock"></span></p>
 
-<br>
+    </div>
 
-<br><br>
+    <script>
+        function showMessage() {
+            const message = document.getElementById("message");
 
-<img src="https://img.freepik.com/premium-photo/anime-girl-warrior-wallpaper_776894-108240.jpg?w=740"
-alt="Anime Girl">
+            message.innerHTML =
+                `জানো সোনামণি, তুমি আমার জীবনের সেই মানুষ,
+যার একটু হাসি আমার মন ভালো করে দেয়,
+যার একটু অভিমান আমাকে অস্থির করে তোলে। 🥹❤️
 
-<button onclick="showMessage()">
-Click Here 💖
-</button>
+তুমি শুধু আমার ভালোবাসা নও,
+তুমি আমার শান্তি, আমার সুখ,
+আমার ছোট্ট একটা পৃথিবী। 🌍💖
 
-<p id="message"></p>
+তোমার সঙ্গে হাজারটা গল্প করতে চাই,
+তোমার সঙ্গে ছোট ছোট মুহূর্তগুলো সুন্দর করে কাটাতে চাই। 🫶🥰
 
-<br>
+জীবনে যত ঝড়ই আসুক না কেন,
+তোমার মুখের হাসিটা যেন সবসময় দেখতে পাই।
+তোমার হাতটা ধরে অনেক দূর হাঁটতে চাই,
+যেখানে থাকবে শুধু আমাদের ভালোবাসা
+আর একসঙ্গে থাকার স্বপ্ন। 💞🌷
 
+তুমি আমার কাছে কতটা স্পেশাল,
+সেটা হয়তো হাজারটা কথায়ও বোঝাতে পারব না।
+তোমার হাসিতে আমার আনন্দ,
+তোমার সুখে আমার সুখ।
 
-</div>
+তুমি সবসময় ভালো থেকো, আমার সোনামণি।
+তোমার জীবনের প্রতিটা দিন সুন্দর হোক।
+ভগবান তোমাকে সবসময় সুস্থ রাখুন। 🥺💗
 
-<script>
-function showMessage(){
-    document.getElementById("message").innerHTML =
-    "✨ , সোনামনি 🥰! ✨";
-}❤️🌸 আমার সোনামণি 🌸❤️
+আমার লক্ষ্মী সোনামণি,
+আমি তোমাকে অনেক অনেক ভালোবাসি। ❤️😘`;
 
-জানো সোনামণি, তুমি আমার জীবনের সেই মানুষ, যার একটু হাসি আমার মন ভালো করে দেয়, যার একটু অভিমান আমাকে অস্থির করে তোলে। 🥹❤️ তুমি শুধু আমার ভালোবাসা নও, তুমি আমার শান্তি, আমার সুখ, আমার ছোট্ট একটা পৃথিবী। 🌍💖
+            message.style.display = "block";
+        }
 
-তোমার সঙ্গে হাজারটা গল্প করতে চাই, তোমার সঙ্গে ছোট ছোট মুহূর্তগুলো সুন্দর করে কাটাতে চাই। 🫶🥰 জীবনে যত ঝড়ই আসুক না কেন, তোমার মুখের হাসিটা যেন সবসময় দেখতে পাই। তোমার হাতটা ধরে অনেক দূর হাঁটতে চাই, যেখানে থাকবে শুধু আমাদের ভালোবাসা আর একসঙ্গে থাকার স্বপ্ন। 💞🌷
+        function updateClock() {
+            const now = new Date();
 
-তুমি আমার কাছে কতটা স্পেশাল, সেটা হয়তো তোমাকে কতটা ভালোবাসি হাজারটা কথায়ও বোঝাতে পারব না। শুধু এটুকু জানি, তোমার হাসিতে আমার আনন্দ, তোমার সুখে আমার সুখ। তুমি সবসময় ভালো থেকো, আমার সোনামণি। তোমার জীবনের প্রতিটা দিন সুন্দর হোক। তোমাকে ভগবান সবসময় সুস্থ রাখোক🥺💗
+            document.getElementById("clock").innerHTML =
+                now.toLocaleTimeString("bn-BD");
+        }
 
-আমার লক্ষী সোনামনি আমি তোমাকে অনেক অনেক ভালোবাসি ❤️😘
-
-function updateClock(){
-    const now = new Date();
-    document.getElementById("clock").innerHTML =
-    now.toLocaleTimeString();
-}
-
-setInterval(updateClock,1000);
-updateClock();
-</script>
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
 
 </body>
 </html>
+
